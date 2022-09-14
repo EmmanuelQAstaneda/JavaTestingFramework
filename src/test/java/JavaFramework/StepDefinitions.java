@@ -15,18 +15,19 @@ public class StepDefinitions {
 			Page page = browser.newPage();
 			page.navigate("http://whatsmyuseragent.org/");
 			page.screenshot(
-					new Page.ScreenshotOptions()
-							.setPath(
-									Paths.get(
-											"./reportsJavaFramework/screenShots/example.png")));
+				new Page.ScreenshotOptions()
+					.setPath(
+						Paths.get(
+							"./reportsJavaFramework/screenShots/example.png"
+						)
+					)
+			);
 		}
 	}
 
 	@When("all step definitions are implemented")
-	public void all_step_definitions_are_implemented() {
-	}
+	public void all_step_definitions_are_implemented() {}
 
 	@Then("the scenario passes")
-	public void the_scenario_passes() {
-	}
+	public void the_scenario_passes() {}
 }
